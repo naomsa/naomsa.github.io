@@ -3,9 +3,12 @@ let WIDTH = 1920;
 let HEIGHT = 1080;
 let SIDES = 7;
 let PALETTES = [
-	["#22577a", "#38a3a5", "#57cc99", "#80ed99", "#c7f9cc"],
 	["#0b132b", "#1c2541", "#3a506b", "#5bc0be", "#5fa8d3"],
-	["#231942", "#5e548e", "#9f86c0", "#be95c4", "#e0b1cb"],
+	["#9384D1", "#766aa7", "#ECC9EE", "#FFDCB6", "#ffe0bd"],
+	["#0A4D68", "#088395", "#00e6b6", "#00FFCA", "#05BFDB"],
+	["#FEFF86", "#DAF5FF", "#B0DAFF", "#B9E9FC", "#9ec4e6"],
+	["#0081C9", "#5BC0F8", "#86E5FF", "#FFC93C", "#ffce50"],
+	["#95BDFF", "#B4E4FF", "#DFFFD8", "#F7C8E0", "#e5ffe0"],
 ];
 
 let palette, tile, side, gap;
