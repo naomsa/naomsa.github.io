@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<main>
+			<label>Factor:</label>
+			<input type="range" min="1" max="4" value="1" id="factor" />
+
+			<label>Sides:</label>
+			<input type="range" min="3" max="12" value="6" id="sides" />
+
+			<input type="text" id="width" value="1080" placeholder="Width" />
+			<input type="text" id="height" value="720" placeholder="Height" />
+
+			<button id="draw">Draw</button>
+		</main>
+		<script src="sketch.js"></script>
+		<script>
+			const newFactor = document.querySelector("#factor");
+			const newSides = document.querySelector("#sides");
+			const newWidth = document.querySelector("#width");
+			const newHeight = document.querySelector("#height");
+			const drawBtn = document.querySelector("button#draw");
+
+			drawBtn.addEventListener("click", async () => {
+				FACTOR = newFactor.valueAsNumber;
+				SIDES = newSides.valueAsNumber;
+				WIDTH = newWidth.value;
+				HEIGHT = newHeight.value;
+
+				setup();
+				draw();
+			});
+		</script>
+	</body>
+</html>
